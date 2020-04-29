@@ -1,0 +1,30 @@
+<ion-header>
+  
+</ion-header>
+
+<ion-content>
+  <ion-grid class="main-grid">
+      <ion-row class="ion-align-items-center main-col">
+        <ion-col class="ion-align-items-center content-center">
+          <img class="logo" src="../../../assets/vm-logo.svg" />
+
+          <ion-item class="item-login">
+            <ion-input class="input-login" placeholder="Email Address" type="email" pattern="email" inputmode="email" autocomplete="off" autocorrect="off" required="true"></ion-input>
+          </ion-item>
+          <ion-item class="item-login">
+            <ion-input class="input-login" placeholder="Password" type="password" required="true" autocomplete="off" autocorrect="off"></ion-input>
+          </ion-item>
+          <ion-item class="item-login">
+            <ion-input class="input-login" placeholder="Repeat Password" type="password" required="true" autocomplete="off" autocorrect="off"></ion-input>
+          </ion-item>
+
+          <ion-button class="login-button">Signup</ion-button>
+          <br/> <!--To bring a line gap between the two buttons-->
+          <ion-button fill="clear" (click)="backToLogin()">Back</ion-button>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer>
+  <div class="footer-image"></div>
+</ion-footer>

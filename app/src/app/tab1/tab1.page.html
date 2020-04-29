@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Virtual Meetups
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Virtual Meetups</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card *ngFor="let meetup of meetups">
+    <img [src]="meetup.imageUrl" />
+    <ion-card-header>
+      <ion-card-subtitle>Meetup</ion-card-subtitle>
+      <ion-card-title>{{meetup.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{meetup.description}}
+    </ion-card-content>
+    <ion-footer class="card-footer">
+      <ion-button fill="clear">
+        <ion-icon name="thumbs-up-outline"></ion-icon>
+        <span class="card-button-span">Interested</span>
+      </ion-button>
+    </ion-footer>
+  </ion-card>
+</ion-content>
